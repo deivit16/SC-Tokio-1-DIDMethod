@@ -1,25 +1,52 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+package-lock.json
+yarn.lock
 
-# Test binary, built with `go test -c`
-*.test
+# Hardhat cache and artifacts
+cache/
+artifacts/
 
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
+# Truffle build artifacts
+build/
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+# Coverage reports
+coverage/
+coverage.json
 
-# Go workspace file
-go.work
-go.work.sum
+# VSCode workspace settings
+.vscode/
+.history/
 
-# env file
+# Remix IDE files
+remixd.sock
+remix-logs.txt
+remix-backups/
+
+# Compiled contracts (ABI, bytecode, metadata)
+*.json
+
+# Logs and temporary files
+*.log
+*.temp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Git related files
+*.orig
+
+# Environment variables (if you're using a .env file for secrets)
 .env
+.env.*
+
+# Solidity test files (if generated)
+*.swp
+*.swo
+
+# Other OS generated files
+*.~lock.*    # LibreOffice lock files
